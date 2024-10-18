@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Document</title>
+  <style>
+body{
+  z-index: 0;
+  padding-bottom: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.visuallogo{
+width: 30px;
+display: inline;
+margin-right: 10px;
+}
+
+.head1{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  color: gray;
+  flex-shrink: 0;
+  cursor: pointer;
+  
+}
+.subhead1{
+  background-coor: aqua;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 17px;
+  color: white;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.subhead2{
+  margin-right: 12px;
+  cursor: pointer;
+  
+}
+.subhead2:hover{
+  color: white;
+}
+.header{
+  height: 60px;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  padding-left: 280px;
+  padding-right: 280px;
+  position: fixed;
+  background-color: rgb(13, 17, 23);
+ 
+}
+.version{
+  margin-top: 70px;
+  display: flex; justify-content: center;
+  flex: 1;
+  font-weight: bolder;
+  font-size: 13px;
+  color: gray;
+  font-family:Arial, Helvetica, sans-serif,
+}
+  </style>
+</head>
+<body style="background-color: rgb(13, 17, 23);">
+
+
+
+  <div>
+    <div class="header">
+      <div class="head1">
+        <div class="subhead1">
+          <div >
+          <img src="data:image/png;base64,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" class="visuallogo">
+          </div>
+          <div>Visual Studio Code</div>
+        </div>
+        <div class="subhead2">Docs</div>
+        <div class="subhead2">Updates</div>
+        <div class="subhead2">Blog</div>
+        <div class="subhead2">API</div>
+        <div class="subhead2">Extensions</div>
+        <div class="subhead2">FAQ</div>
+        <div class="subhead2">GitHub Copilot</div>
+      </div>
+      <div style="display: flex; margin-left: 10px; background-color: burlywoo; align-items: center;">
+        
+          <input type="text" placeholder="Search Docs" style="border-color: gray; border-radius: 4px;border-style: solid;border: none; height: 25px;padding: 2px 15px 2px 15px;">
+          <button style="margin-left: 5px;border-color: gray; border-radius: 4px;border-style: solid;height: 30px; background-color: rgb(0, 105, 185);color: white;font-family: Arial, Helvetica, sans-serif;border: none; padding: 2px 15px 2px 15px;cursor: pointer;">Download</button>
+        
+      </div>
+    </div>
+  
+
+    <div style="display: flex; align-items: end; " >
+      <div class="version"> 
+        <div><a href=""><u>Version 1.92</u></a>
+        is now available! Read about the new features and fixes from july.</div>
+      </div>
+    
+      <div style="color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px;">X</div>
+    </div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+ <div style="">
+  <div style="display: flex; justify-content: center;">
+    <div style="font-size: 60px;margin-top: 40px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; color: white;">
+      
+      Code faster with AI
+  
+  </div>
+</div>
+<div style="display: flex; justify-content: center;margin-top: 10px;">
+  <div style="font-size: 22px;color: rgb(155, 163, 180);font-family: Arial, Helvetica, sans-serif;width: 600px;line-height: 33px;">
+    Visual Studio Code with GitHub Copilot supercharges your code with AI-powered suggestions, right in your editor.
+  </div>
+</div>
+
+
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+  <div>
+    <button style="background-color: rgb(0, 91, 164);color: white;padding: 13px 22px 13px 22px;border-radius: 4px; border-style: solid;font-size: 16px;">Download for Windows</button>
+    <button style="background-color: rgba(255, 255, 255, 0.1); color: white;padding: 13px 22px 13px 22px;border-style: solid; border-radius: 4px;font-size: 16px;">Try GitHub Copilot</button>
+  </div>
+</div>
+
+ </div>
+
+
+
+<div style="padding-bottom: 0px;">
+  <div style="display: flex; justify-content: center; background-color: antiuewhite; margin-top: 20px;max-height: 800px;">
+    <div style="backgroundcolor: aqua;"><img src="https://code.visualstudio.com/assets/home/home-screenshot-copilot.png" style="width: 100%; height: 700px; max-width: 1200px; object-fit: contain;flex: 1;"></div>
+  </div>
+</div>
+
+
+<div style="display: flex; margin-top: 10px; justify-content: center;background-coor: aliceblue;">
+ 
+  <div style="display: flex; flex: 1;justify-content: center;background-coor: blue;borde-style: solid;">
+
+
+
+    <div style="background-clor: antiquewhite; flex: 1;height: 450px; max-width: 400px; margin-right: 20px;" >
+      <div style="font-size: 35px;font-family: Arial, Helvetica, sans-serif;width: 550px;color: white;">Code with GitHub Copilot <br></div>
+  <div style="font-size: 17px;color:rgb(155, 163, 180);font-family: Arial, Helvetica, sans-serif;margin-top: 15px; line-height: 25px;">Write code faster and smarter with GitHub Copilot, your AI pair programmer <br> <br></div>
+  
+  <a href=""><u>Try GitHub Copilot free for 30 days <br><br></u></a>
+  
+  <div style="font-size: 17px;color:rgb(155, 163, 180);font-family: Arial, Helvetica, sans-serif;margin-top: 15px;;line-height: 25px;">
+    <a href=""><u>Completions</u></a>
+    present suggestions automatically to help you code more efficiently. <br><br></div>
+  
+    <div style="font-size: 17px;color:rgb(155, 163, 180);font-family: Arial, Helvetica, sans-serif;margin-top: 15px;;line-height: 25px;">
+      <a href=""><u>Copilot Chat</u></a>
+      understands the context of your code, workspace, extensions, settings, and more. <br><br></div>
+  
+  
+      <div style="font-size: 17px;color:rgb(155, 163, 180);font-family: Arial, Helvetica, sans-serif;margin-top: 15px;line-height: 25px;">
+        <a href=""><u> Inline Chat</u></a>
+        enables you to iteratively generate edits and get answers to quick questions, directly on your code. <br><br></div>
+      
+    </div>
+  
+  
+    <div style="backgrond-color: aqua; flex: 1;max-width: 600px;min-width: 300px;">
+      <img src="https://code.visualstudio.com/assets/home/swimlane-copilot.png" width="100%" style="object-fit: contain;">
+    </div>
+
+
+  </div>
+
+</div>
+</body>
+</html>
